@@ -10,11 +10,13 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView resultField;
-    TextView numberField;
-    TextView operationField;
-    Double operand = null;
-    String lastOperation = "=";
+    private TextView resultField;
+    private TextView numberField;
+    private TextView operationField;
+    private Double operand = null;
+    private String lastOperation = "=";
+    private final static String OPERATION = "OPERATION";
+    private final static String OPERAND = "OPERAND";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +30,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle instanceState) {
-        instanceState.putString("OPERATION", lastOperation);
+        instanceState.putString(OPERATION, lastOperation);
         if(operand!=null)
-            instanceState.putDouble("OPERAND", operand);
+            instanceState.putDouble(OPERAND, operand);
         super.onSaveInstanceState(instanceState);
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
         super.onRestoreInstanceState(instanceState);
-        lastOperation = instanceState.getString("OPERATION");
-        operand= instanceState.getDouble("OPERAND");
+        lastOperation = instanceState.getString(OPERATION);
+        operand= instanceState.getDouble(OPERAND);
         resultField.setText(operand.toString());
         operationField.setText(lastOperation);
     }

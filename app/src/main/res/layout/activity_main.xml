@@ -18,7 +18,8 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button2"
@@ -29,7 +30,8 @@
         app:layout_constraintEnd_toStartOf="@id/button3"
         app:layout_constraintStart_toEndOf="@id/button1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button3"
@@ -40,7 +42,8 @@
         app:layout_constraintEnd_toStartOf="@id/button_split"
         app:layout_constraintStart_toEndOf="@id/button2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button4"
@@ -51,7 +54,8 @@
         app:layout_constraintEnd_toStartOf="@id/button5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button1" />
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button5"
@@ -61,7 +65,8 @@
         app:layout_constraintBottom_toTopOf="@id/button8"
         app:layout_constraintEnd_toStartOf="@id/button6"
         app:layout_constraintStart_toEndOf="@id/button4"
-        app:layout_constraintTop_toBottomOf="@id/button2" />
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button6"
@@ -71,7 +76,8 @@
         app:layout_constraintBottom_toTopOf="@id/button9"
         app:layout_constraintEnd_toStartOf="@id/button_multiply"
         app:layout_constraintStart_toEndOf="@id/button5"
-        app:layout_constraintTop_toBottomOf="@id/button3" />
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button7"
@@ -82,7 +88,8 @@
         app:layout_constraintEnd_toStartOf="@id/button8"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button4" />
+        app:layout_constraintTop_toBottomOf="@id/button4"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button8"
@@ -92,7 +99,8 @@
         app:layout_constraintBottom_toTopOf="@id/button_point"
         app:layout_constraintEnd_toStartOf="@id/button9"
         app:layout_constraintStart_toEndOf="@id/button7"
-        app:layout_constraintTop_toBottomOf="@id/button5" />
+        app:layout_constraintTop_toBottomOf="@id/button5"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button9"
@@ -102,7 +110,8 @@
         app:layout_constraintBottom_toTopOf="@id/button_equal"
         app:layout_constraintEnd_toStartOf="@id/button_minus"
         app:layout_constraintStart_toEndOf="@id/button8"
-        app:layout_constraintTop_toBottomOf="@id/button6" />
+        app:layout_constraintTop_toBottomOf="@id/button6"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button0"
@@ -113,7 +122,8 @@
         app:layout_constraintEnd_toStartOf="@id/button_point"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button7" />
+        app:layout_constraintTop_toBottomOf="@id/button7"
+        android:onClick="onNumberClick" />
 
     <Button
         android:id="@+id/button_point"
@@ -124,18 +134,18 @@
         app:layout_constraintEnd_toStartOf="@id/button_equal"
         app:layout_constraintStart_toEndOf="@id/button0"
         app:layout_constraintTop_toBottomOf="@id/button8"
-        app:layout_constraintVertical_bias="0.0" />
+        android:onClick="onNumberClick"  />
 
     <Button
         android:id="@+id/button_equal"
-        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_equal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_plus"
         app:layout_constraintStart_toEndOf="@id/button_point"
-        app:layout_constraintTop_toBottomOf="@id/button9" />
+        app:layout_constraintTop_toBottomOf="@id/button9"
+        android:onClick="onOperationClick" />
 
     <Button
         android:id="@+id/button_split"
@@ -146,7 +156,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        android:onClick="onOperationClick" />
 
     <Button
         android:id="@+id/button_multiply"
@@ -156,7 +167,8 @@
         app:layout_constraintBottom_toTopOf="@id/button_minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button6"
-        app:layout_constraintTop_toBottomOf="@id/button_split" />
+        app:layout_constraintTop_toBottomOf="@id/button_split"
+        android:onClick="onOperationClick" />
 
     <Button
         android:id="@+id/button_minus"
@@ -166,7 +178,8 @@
         app:layout_constraintBottom_toTopOf="@id/button_plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button9"
-        app:layout_constraintTop_toBottomOf="@id/button_multiply" />
+        app:layout_constraintTop_toBottomOf="@id/button_multiply"
+        android:onClick="onOperationClick" />
 
     <Button
         android:id="@+id/button_plus"
@@ -176,10 +189,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_equal"
-        app:layout_constraintTop_toBottomOf="@id/button_minus" />
+        app:layout_constraintTop_toBottomOf="@id/button_minus"
+        android:onClick="onOperationClick" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/resultField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
@@ -190,4 +204,24 @@
         app:layout_constraintBottom_toTopOf="@id/button1"
         app:layout_constraintEnd_toEndOf="@id/button_split"
         app:layout_constraintStart_toStartOf="@id/button1" />
+
+    <TextView
+        android:id="@+id/numberField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D6D6D6"
+        app:layout_constraintBottom_toTopOf="@+id/resultField"
+        app:layout_constraintEnd_toStartOf="@+id/operationField"
+        app:layout_constraintStart_toStartOf="@+id/resultField" />
+
+    <TextView
+        android:id="@+id/operationField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D6D6D6"
+        app:layout_constraintBottom_toTopOf="@+id/resultField"
+        app:layout_constraintEnd_toEndOf="@+id/resultField"
+        app:layout_constraintStart_toEndOf="@+id/numberField" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

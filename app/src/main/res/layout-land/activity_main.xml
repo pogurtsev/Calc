@@ -11,6 +11,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button1"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_1"
         app:layout_constraintBottom_toTopOf="@id/button4"
@@ -19,113 +20,112 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        style="@style/wrapContent" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_2"
         app:layout_constraintBottom_toTopOf="@id/button5"
         app:layout_constraintEnd_toStartOf="@id/button3"
         app:layout_constraintStart_toEndOf="@id/button1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        style="@style/wrapContent" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_3"
         app:layout_constraintBottom_toTopOf="@id/button6"
         app:layout_constraintEnd_toStartOf="@id/button_split"
         app:layout_constraintStart_toEndOf="@id/button2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        style="@style/wrapContent" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_4"
         app:layout_constraintBottom_toTopOf="@id/button7"
         app:layout_constraintEnd_toStartOf="@id/button5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button1"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button5"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_5"
         app:layout_constraintBottom_toTopOf="@id/button8"
         app:layout_constraintEnd_toStartOf="@id/button6"
         app:layout_constraintStart_toEndOf="@id/button4"
-        app:layout_constraintTop_toBottomOf="@id/button2"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_6"
         app:layout_constraintBottom_toTopOf="@id/button9"
         app:layout_constraintEnd_toStartOf="@id/button_multiply"
         app:layout_constraintStart_toEndOf="@id/button5"
-        app:layout_constraintTop_toBottomOf="@id/button3"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button3" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button7"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_7"
         app:layout_constraintBottom_toTopOf="@id/button0"
         app:layout_constraintEnd_toStartOf="@id/button8"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button4"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button4" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button8"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_8"
         app:layout_constraintBottom_toTopOf="@id/button_point"
         app:layout_constraintEnd_toStartOf="@id/button9"
         app:layout_constraintStart_toEndOf="@id/button7"
-        app:layout_constraintTop_toBottomOf="@id/button5"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button5" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button9"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_9"
         app:layout_constraintBottom_toTopOf="@id/button_equal"
         app:layout_constraintEnd_toStartOf="@id/button_minus"
         app:layout_constraintStart_toEndOf="@id/button8"
-        app:layout_constraintTop_toBottomOf="@id/button6"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button6" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button0"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_point"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button7"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button7" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_point"
+        style="@style/wrapContent"
         android:onClick="onNumberClick"
         android:text="@string/_point"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_equal"
         app:layout_constraintStart_toEndOf="@id/button0"
-        app:layout_constraintTop_toBottomOf="@id/button8"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button8" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_equal"
@@ -140,34 +140,34 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_split"
+        style="@style/wrapContent"
         android:onClick="onOperationClick"
         android:text="@string/_split"
         app:layout_constraintBottom_toTopOf="@id/button_multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        style="@style/wrapContent" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_multiply"
+        style="@style/wrapContent"
         android:onClick="onOperationClick"
         android:text="@string/_multiply"
         app:layout_constraintBottom_toTopOf="@id/button_minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button6"
-        app:layout_constraintTop_toBottomOf="@id/button_split"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button_split" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_minus"
+        style="@style/wrapContent"
         android:onClick="onOperationClick"
         android:text="@string/_minus"
         app:layout_constraintBottom_toTopOf="@id/button_plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button9"
-        app:layout_constraintTop_toBottomOf="@id/button_multiply"
-        style="@style/wrapContent" />
+        app:layout_constraintTop_toBottomOf="@id/button_multiply" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_plus"
@@ -183,6 +183,7 @@
         android:id="@+id/resultField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
         android:background="@color/resFieldColor"
         android:text="@string/_0"
         android:textAlignment="textEnd"
